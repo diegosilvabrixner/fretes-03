@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./css/adicionar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>adicionar entrega</title>
+</head>
+<body>
+    <header class="header-adicionar">
+        <a href="index.html" class="btn-voltar">voltar</a>
+    </header>
+    <main class="container">
+
+        <section class="formulario">
+            <div class="formulario__container">
+                <h2 class="formulario__titulo-texto">Adicionar fretes</h2>
+            </div>
+
+            <form class="principal__formulario" data-formulario>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="nome">Placa</label>
+                    <input name="placa" id="placa" class="campo__escrita" required type="text" minlength="7"/>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="email">Motorista</label>
+                    <input name="nome" id="nome" class="campo__escrita" required type="text" minlength="3"/>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="rg">Carga</label>
+                    <input name="Carga" id="carga" class="campo__escrita " required type="text" minlength="4"/>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="rg">Empresa/CNJP</label>
+                    <input name="empresa" id="empresa" class="campo__escrita campo__escrita--menor" required type="text" minlength="4"/>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="rg">Valor Total</label>
+                    <input name="valor" id="valor" class="campo__escrita campo__escrita--menor" required type="text" minlength="2"/>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="rg">CEP/Endereço</label>
+                    <input name="Endereço" id="Endereço" class="campo__escrita campo__escrita--menor" required type="text" minlength="4"/>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="rg">Peso Bruto</label>
+                    <input name="rg" id="rg" class="campo__escrita campo__escrita--menor" required type="number" minlength="2"/>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="rg">Data</label>
+                    <input name="data" id="data" class="campo__escrita campo__escrita--menor" required type="date" minlength="4"/>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+
+
+                <div>
+                    <input value="Avançar" class="formulario__botao" id="enviar" data-botao-enviar type="submit">
+                    <span class="mensagem-erro"></span>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+</body>
+</html>

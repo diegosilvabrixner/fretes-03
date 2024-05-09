@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>cadastro</title>
+</head>
+<body>
+    <main class="container">
+
+        <section class="formulario">
+            <div class="formulario__container">
+                <h2 class="formulario__titulo-texto">Se cadastre</h2>
+            </div>
+
+            <form class="principal__formulario" data-formulario>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="nome">Nome</label>
+                    <input name="nome" id="nome" class="campo__escrita" required type="text" minlength="4"/>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="email">Nascimento/Idade</label>
+                    <input name="data" id="data" class="campo__escrita" required type="date" minlength="3"/>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="rg">CPF</label>
+                    <input name="Carga" id="carga" class="campo__escrita " required type="text" minlength="11"/>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="rg">E-mail</label>
+                    <input name="email" id="email" class="campo__escrita campo__escrita--menor" required type="email" minlength="7"/>
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <div>
+                    <input value="Avançar" class="formulario__botao" id="enviar" data-botao-enviar type="submit">
+                    <span class="mensagem-erro"></span>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+</body>
+<footer class="rodape">
+   
+    <img src="./img/home.svg" alt="imagem de uma casa" id="casa" class="rodape-casa">
+    <script>
+        document.getElementById("casa").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+        </script>
+
+    <img src="./img/caminhao.svg" alt="" id="caminhao" class="rodape-caminhao" >
+    <script>
+        document.getElementById("caminhao").addEventListener("click", function() {
+            window.location.href = "fretes.html";
+        });
+        </script>
+
+    <img src="./img/avatar.svg" alt="imagem de cadastro" id="cadastro" class="rodape-cadastro">
+    <script>
+        document.getElementById("cadastro").addEventListener("click", function() {
+            window.location.href = "cadastro.html";
+        });
+        </script>
+</footer>
+</html>

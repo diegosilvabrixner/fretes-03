@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./css/adicionar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>app</title>
+</head>
+<body >
+    <header class="cabecalho">
+        <input type="search" class="banner__pesquisa" placeholder="fretes">
+    </header>
+    <section class="infos">
+        <a>FRETES</a>
+        <a class="btn-adicionar" href="./adicionar.html">Adicionar</a>
+    </section>
+</body>
+
+<footer class="rodape">
+   
+        <img src="./img/home.svg" alt="imagem de uma casa" id="casa" class="rodape-casa">
+        <script>
+            document.getElementById("casa").addEventListener("click", function() {
+                window.location.href = "index.html";
+            });
+            </script>
+
+        <img src="./img/caminhao.svg" alt="" id="caminhao" class="rodape-caminhao" >
+        <script>
+            document.getElementById("caminhao").addEventListener("click", function() {
+                window.location.href = "fretes.html";
+            });
+            </script>
+
+        <img src="./img/avatar.svg" alt="imagem de cadastro" id="cadastro" class="rodape-cadastro">
+        <script>
+            document.getElementById("cadastro").addEventListener("click", function() {
+                window.location.href = "cadastro.html";
+            });
+            </script>
+</footer>
+</html>

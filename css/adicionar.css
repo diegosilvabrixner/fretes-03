@@ -1,0 +1,15 @@
+.btn-voltar{
+    font-family: var(--fonte-secundaria);
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.header-adicionar{
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    display: flex;
+    padding: 1.8em;
+    position: relative;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
